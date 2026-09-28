@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;
+    n.push=n;
+    n.loaded=!0;
+    n.version='2.0';
+    n.queue=[];
+    t=b.createElement(e);
+    t.async=!0;
+    t.src=v;
+    s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)
+    }(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1404407291839564');
+    fbq('track', 'PageView');
+    </script>
+
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1404407291839564&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 28px;
+            padding: 35px 25px;
+            max-width: 420px;
+            width: 100%;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        /* Company Logo Style (Gol / Circular) */
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .company-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ff416c;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .badge-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 18px;
+        }
+
+        .badge {
+            background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 13px;
+            padding: 8px 20px;
+            border-radius: 50px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 15px rgba(255, 65, 108, 0.3);
+            text-transform: uppercase;
+        }
+
+        .title {
+            color: #1a1a1a;
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 22px;
+            letter-spacing: -0.5px;
+        }
+
+        .features-list {
+            text-align: left;
+            margin-bottom: 25px;
+            background: #f8fafc;
+            padding: 18px;
+            border-radius: 20px;
+            border: 1px solid #edf2f7;
+        }
+
+        .feature-item {
+            font-size: 14px;
+            color: #334155;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .feature-item:last-child {
+            margin-bottom: 0;
+            color: #d97706;
+        }
+
+        .feature-item span {
+            margin-right: 10px;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        /* Animated Telegram Button */
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .btn-telegram {
+            display: inline-block;
+            width: 100%;
+            background: linear-gradient(135deg, #0088cc 0%, #00aaff 100%);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px 20px;
+            border-radius: 14px;
+            font-size: 16px;
+            font-weight: 700;
+            box-shadow: 0 6px 20px rgba(0, 136, 204, 0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-align: center;
+            letter-spacing: 0.5px;
+
+            /* Continuous Pop Animation */
+            animation: buttonPop 1.6s ease-in-out infinite;
+        }
+
+        .btn-telegram:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 25px rgba(0, 136, 204, 0.6);
+        }
+
+        .btn-telegram:active {
+            transform: scale(0.97);
+        }
+
+        @keyframes buttonPop {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .btn-telegram {
+                animation: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <!-- Company Logo (Gol Shape - logo.png) -->
+        <div class="logo-container">
+            <img src="logo.png" alt="Company Logo" class="company-logo">
+        </div>
+
+        <!-- Center Badge -->
+        <div class="badge-container">
+            <div class="badge">ONLY FOR WOMEN'S & GIRLS 🤱👰</div>
+        </div>
+
+        <h1 class="title">Handwriting Jobs</h1>
+
+        <!-- Features List -->
+        <div class="features-list">
+            <div class="feature-item">
+                <span>🏠</span>
+                Ab ghar baithe likhne ka kaam kre.
+            </div>
+
+            <div class="feature-item">
+                <span>🕰️</span>
+                Flexible timing according to projects.
+            </div>
+
+            <div class="feature-item">
+                <span>📑</span>
+                Good handwriting required (part-time job).
+            </div>
+
+            <div class="feature-item">
+                <span>🇮🇳</span>
+                All India delivery available of material.
+            </div>
+
+            <div class="feature-item">
+                <span>💻</span>
+                Minimum qualification 12th pass.
+            </div>
+
+            <div class="feature-item">
+                <span>✅</span>
+                Registration fees is required.
+            </div>
+        </div>
+
+        <!-- Centered Animated Telegram Button -->
+        <div class="btn-container">
+            <a href="https://t.me/+_5daHQfEaXBjZWE1" class="btn-telegram" onclick="trackLead()">
+                JOIN TELEGRAM CHANNEL 🚀
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Lead Tracking Script -->
+    <script>
+        function trackLead() {
+            if (typeof fbq === 'function') {
+                fbq('track', 'Lead');
+            }
+        }
+    </script>
+
+</body>
+</html>
